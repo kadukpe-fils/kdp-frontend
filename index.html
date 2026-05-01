@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kadukpe & Fils</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="bg"></div>
+
+  <div class="container">
+
+    <div class="card">
+
+      <!-- 🌗 THEME TOGGLE (AJOUT IMPORTANT) -->
+      <div class="theme-toggle">
+        <button id="toggleTheme">☀️ Mode clair</button>
+      </div>
+
+      <!-- 🟡 HEADER MOBILE MONEY -->
+      <div class="momo-header">
+        <div class="momo-brand">
+          <span class="dot"></span>
+          Mobile Money
+        </div>
+        <div class="momo-status">● En ligne</div>
+      </div>
+
+      <h1>💸 Kadukpe & Fils</h1>
+      <p class="subtitle">Transfert sécurisé</p>
+
+      <!-- 🏢 AGENCE -->
+      <div class="agency-card">
+        <div class="agency-title">🏢 Agence de retrait rapide</div>
+
+        <div class="agency-info">
+          <p><span>Nom :</span> Kadukpe & Fils </p>
+          <p><span>Service :</span> Retrait Mobile Money sécurisé</p>
+          <p><span>Disponibilité :</span> 8h – 22h, 7j/7</p>
+        </div>
+      </div>
+
+      <form id="paymentForm">
+
+        <div class="input-group">
+          <label>Nom complet</label>
+          <input type="text" id="name" placeholder="Ex: Kouassi Jean" />
+          <small id="nameError"></small>
+        </div>
+
+        <div class="input-group">
+          <label>Téléphone</label>
+          <input type="tel" id="phone" placeholder="Ex: 97xxxxxx" />
+          <small id="phoneError"></small>
+        </div>
+
+        <div class="input-group">
+          <label>Montant (XOF)</label>
+          <input type="number" id="amount" placeholder="Ex: 5000" />
+          <small id="amountError"></small>
+        </div>
+
+        <button id="submitBtn" type="submit" disabled>
+          Continuer le paiement →
+        </button>
+
+      </form>
+
+      <p class="footer">
+        kadukpefils@gmail.com    ||    tout droit réservé 
+      </p>
+
+    </div>
+
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
