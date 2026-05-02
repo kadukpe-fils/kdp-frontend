@@ -7,6 +7,8 @@
   <link rel="stylesheet" href="style.css">
 </head>
 
+<!-- ❌ AVANT : <body class="dark"> -->
+<!-- ✅ APRÈS : mode clair par défaut -->
 <body>
 
   <div class="bg"></div>
@@ -15,9 +17,11 @@
 
     <div class="card">
 
-      <!-- 🌗 THEME TOGGLE (AJOUT IMPORTANT) -->
+      <!-- 🌗 THEME TOGGLE -->
       <div class="theme-toggle">
-        <button id="toggleTheme">☀️ Mode clair</button>
+        <!-- ❌ AVANT : ☀️ Mode clair -->
+        <!-- ✅ APRÈS : bouton pour activer le sombre -->
+        <button id="toggleTheme">🌙 Mode sombre</button>
       </div>
 
       <!-- 🟡 HEADER MOBILE MONEY -->
@@ -53,7 +57,7 @@
 <br>
         <div class="input-group">
           <label>Téléphone</label>
-          <input type="tel" id="phone" placeholder="Ex: Votre numéro" />
+          <input type="tel" id="phone" placeholder=" Votre numéro" />
           <small id="phoneError"></small>
         </div>
 <br>
