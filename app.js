@@ -16,12 +16,14 @@ const toggleBtn = document.getElementById("toggleTheme");
 
 if (toggleBtn) {
   toggleBtn.addEventListener("click", () => {
-    document.body.classList.toggle("light");
+    // ❌ AVANT : light
+    // ✅ APRÈS : dark
+    document.body.classList.toggle("dark");
 
-    if (document.body.classList.contains("light")) {
-      toggleBtn.textContent = "🌙 Mode sombre";
-    } else {
+    if (document.body.classList.contains("dark")) {
       toggleBtn.textContent = "☀️ Mode clair";
+    } else {
+      toggleBtn.textContent = "🌙 Mode sombre";
     }
   });
 }
@@ -92,9 +94,7 @@ form.addEventListener("submit", async (e) => {
   try {
     const res = await fetch("https://kdp-backend-sbd9.onrender.com/api/create-payment", {
       method: "POST",
-      headers: {
-        "Content-Type": "application/json"
-      },
+      headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
         name: nameInput.value.trim(),
         phone: phoneInput.value.trim(),
@@ -115,7 +115,7 @@ form.addEventListener("submit", async (e) => {
     }
 
   } catch (error) {
-    console.error("Erreur:", error);
+    console.error(error);
     submitBtn.innerText = "Erreur réseau";
     setTimeout(resetButton, 2000);
   }
