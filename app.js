@@ -32,7 +32,9 @@ if (toggleBtn) {
 // VALIDATION RULES
 // =======================
 const nameRegex = /^[A-Za-zÀ-ÿ\s]+$/;
-const phoneRegex = /^[0-9]{8,15}$/;
+
+// 🔥 FIX IMPORTANT ICI
+const phoneRegex = /^\+?[0-9\s]{8,20}$/;
 
 // =======================
 // FORM VALIDATION
