@@ -8,21 +8,23 @@
 
 /* VARIABLES THEME */
 :root {
-  --bg: radial-gradient(circle at top, #0b1220, #05070d);
-  --card: rgba(255,255,255,0.06);
-  --text: white;
-  --muted: rgba(255,255,255,0.6);
-  --input: rgba(0,0,0,0.25);
-  --border: rgba(255,255,255,0.12);
-}
-
-body.light {
+  /* ✅ MODE CLAIR PAR DÉFAUT */
   --bg: #f4f6fb;
   --card: white;
   --text: #111;
   --muted: #555;
   --input: #f1f1f1;
   --border: rgba(0,0,0,0.1);
+}
+
+/* ✅ MODE SOMBRE MAINTENANT ACTIVÉ AVEC .dark */
+body.dark {
+  --bg: radial-gradient(circle at top, #0b1220, #05070d);
+  --card: rgba(255,255,255,0.06);
+  --text: white;
+  --muted: rgba(255,255,255,0.6);
+  --input: rgba(0,0,0,0.25);
+  --border: rgba(255,255,255,0.12);
 }
 
 /* BODY */
